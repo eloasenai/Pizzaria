@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .fullcontainer {
@@ -14,20 +14,19 @@ body {
 
 .bgfundo {
   background: url(https://placehold.co/1920x1080) no-repeat center/cover;
-
   /*
-    background-color: blue;
-    background-image:url(https://placehold.co/1920x1080);
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size: cover;
+       background-color: blue;
+       background-image: url(https://placehold.co/1920x1080); 
+       background-repeat: no-repeat;
+       background-position: center center;
+       background-size: cover;
     */
   width: 100%;
   height: 700px;
 }
 
 header {
-  color: white;
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,42 +36,41 @@ header {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 69%,
+    rgba(0, 0, 0, 0.8) 60%,
     rgba(0, 0, 0, 0) 100%
   );
-
   background: -webkit-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 69%,
+    rgba(0, 0, 0, 0.8) 60%,
     rgba(0, 0, 0, 0) 100%
   );
-
   background: -moz-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 69%,
+    rgba(0, 0, 0, 0.8) 60%,
     rgba(0, 0, 0, 0) 100%
   );
-
   padding: 24px 0;
 }
+
 .container {
   max-width: 1073px;
   margin: 0 auto;
 }
-
-.main-navigation   {
+.main-navigation {
   display: flex;
   align-items: center;
 }
+
 .main-navigation ul {
   list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 28px;
   align-items: center;
   margin: 0;
 }
+
 .main-navigation a {
   color: #fff;
   display: block;
@@ -80,10 +78,7 @@ header {
   font-size: 17px;
   font-weight: 700;
   font-family: Helvetica, sans-serif;
-  /*margin-bottom:3px;*/
-  border-bottom: solid 3px transparent;
 }
-
 .main-navigation a:hover,
 .main-navigation a:focus {
   border-color: #e7a200;
@@ -97,19 +92,121 @@ header {
 
 .sec-menu {
   display: flex;
-}
-.sec-menu ion-icon{
-    font-size: 25px;
+  align-items: center;
+  gap: 15px;
 }
 
-#btnzap{
-    background-color: #e7a200;
-    border-radius: 65px;
-    padding: 3px 15px 0 15px;
-    font-size:20px;
-    font-weight: bolder;
-    display: flex;
-    align-self: center ;
-    gap: 7px;
+.sec-menu ion-icon {
+  font-size: 25px;
+}
 
+#btnZap {
+  background: #e7a200;
+  border-radius: 65px;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.zap {
+  text-decoration: none;
+  color: #fff;
+}
+
+.ifood {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+#BoasVindas {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  background: #ffffff;
+}
+
+#BoasVindas img {
+  padding: 0 100px;
+}
+
+#TextoBoasVindas {
+  max-width: 600px;
+  padding-right: 100px;
+}
+
+#TextoBoasVindas h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#TextoBoasVindas h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #e7a200;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+#TextoBoasVindas p {
+  margin-bottom: 0;
+}
+
+#cardapio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cardapio div{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+#cardapio img {
+  padding: 36px 0;
+}
+
+#cardapio div img{
+  padding: 0;
+}
+
+#cardapio h2{
+color: #d03012;
+text-transform:uppercase;
+font-size: 28px;
+font-weight:900;
+margin: 0 0 7px 0;
+}
+
+.btnCardapio{
+  text-decoration: none;
+  color: #fff;
+  background: #8daa3e;
+padding: 10px 20px;
+border-radius: 50px;
+border-bottom: 2px solid #6b7552;
+}
+
+#promoçãoPizzas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
 }
